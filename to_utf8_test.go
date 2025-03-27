@@ -22,6 +22,7 @@ func TestToUTF8(t *testing.T) {
 		},
 	}
 	for _, tt := range tests {
+
 		t.Run(tt.name, func(t *testing.T) {
 			if got := ToUTF8(tt.str); got != tt.want {
 				t.Errorf("ToUTF8() = %v, want %v", got, tt.want)

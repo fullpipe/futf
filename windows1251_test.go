@@ -7,6 +7,7 @@ import (
 	"golang.org/x/text/encoding/charmap"
 )
 
+// TODO: they shoould pass. Its required to make Windows1251 guesser more strict
 func TestWindows1251_Guese(t *testing.T) {
 	// t.Log(string(toEnc("Ñàíêò-Ïåòåðáóðã", charmap.ISO8859_1)))
 	// t.Log(string(dec(toEnc("Ñàíêò-Ïåòåðáóðã", charmap.ISO8859_1), charmap.Windows1251)))
